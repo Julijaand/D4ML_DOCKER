@@ -19,5 +19,3 @@ $ docker build -t my-apache-image .
 
 Run Docker Container from my-apache-image:
 $ docker run -d -p 15100:80 --name my-apache-container my-apache-image
-
-As a junior DevOps Engineer, you need to create a docker image that will run apache web server to show a simple business card. 
