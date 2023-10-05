@@ -1,0 +1,23 @@
+Create an AWS t2.micro Instance according instructions
+
+In instance install Docker according instructions:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+Create directory for the project:
+$ mkdir apache_container
+$ cd apache_container
+
+Create folder with all necesary info for business card:
+$ mkdir business_card 
+
+Create Dockerfile
+$ cd ..                     (exit from busines card folder 1 level up)
+$ vim Dockerfile            (Apache image used from Dockerhub)
+
+Build Docker image:
+$ docker build -t my-apache-image .
+
+Run Docker Container from my-apache-image:
+$ docker run -d -p 15100:80 --name my-apache-container my-apache-image
+
+As a junior DevOps Engineer, you need to create a docker image that will run apache web server to show a simple business card. 
